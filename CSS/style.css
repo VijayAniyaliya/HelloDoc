@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-image: url("/Images/image_2024_01_17T04_17_17_750Z.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.container-fluid{
+}
+
+.hellodoc-img{
+    
+    height: 120px;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+.back-btn{
+    padding-right: 250px;
+}
+
+.back-btn-txt{
+    font-size: 20px;
+}
+
+.inputs{
+    /* display: flex; */
+    /* justify-content:  center; */
+    /* align-items: center; */
+    width: 300px;
+    margin: auto;
+}
+
+.input-icon{
+    left: 135px;
+    position: relative;
+    top: -42px;
+}
+
+
+.btn{
+    color: white;
+}
