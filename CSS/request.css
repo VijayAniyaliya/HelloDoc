@@ -1,0 +1,33 @@
+body{
+    /* min-height: 100vh; */
+}
+
+.container-fluid{
+    /* background: #fafafa; */
+}
+
+.main-content{
+    border-radius: 1%;
+}
+
+.back-btn{
+    width: 80px;
+}
+.submit-btn{
+    width: 80px;
+}
+.cancel-btn{
+    width: 80px;
+}
+
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .footer-content{
+    /* position: absolute; */
+    /* bottom: 0px; */
+  }

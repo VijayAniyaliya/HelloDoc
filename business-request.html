@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patient request screen</title>
+    <title>business request screen</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -23,11 +23,11 @@
                 <img src="/Images/image_2024_01_17T04_17_17_750Z.png" height="60px" alt="">
             </div>
             <div class="my-auto mr-2">
-                <img src="/Images/light.png" onclick="myFunction()" height="30px" alt="">
+                <img src="/Images//light.png" onclick="myFunction()" height="30px" alt="">
             </div>
         </div>
 
-        <div class="body-content container mb-3">
+        <div class="body-content container">
 
 
             <div class="mb-2 mr-1 d-flex justify-content-end">
@@ -36,10 +36,60 @@
                 </button>
             </div>
 
-            <div class="main-content px-4 py-3 shadow-lg">
+            <div class="main-content  px-4 py-3 shadow-lg">
+
+                <div class="business-info">
+                    <div class="h5 mb-4">Business Information</div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="your first name" />
+                                <label for="floatingInput" class="text-muted">Your First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="your last name" />
+                                <label for="floatingInput" class="text-muted">Your Last Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="last name" />
+                                <label for="floatingInput" class="text-muted">Contact Number</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="abc@gmail.com" />
+                                <label for="floatingInput" class="text-muted">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="business/property name" />
+                                <label for="floatingInput" class="text-muted">Business/Property Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="case number" />
+                                <label for="floatingInput" class="text-muted">Case Number (Optional)</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
                 <div class="patient-info">
-                    <div class="h5 mb-4">Patient-information</div>
+                    <div class="h5 mb-4 mt-4">Patient Information</div>
 
                     <div class="row">
                         <div class="col-12">
@@ -51,7 +101,6 @@
                             </div>
                         </div>
 
-                        <!-- <div class="row"> -->
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="first name" />
@@ -70,7 +119,7 @@
                                 <label for="floatingInput" class="text-muted">Date of Birth</label>
                             </div>
                         </div>
-                        <!-- </div> -->
+
                     </div>
                 </div>
 
@@ -79,7 +128,6 @@
 
                     <div class="row">
 
-                        <!-- <div class="row"> -->
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" id="floatingInput"
@@ -93,7 +141,7 @@
                                 <label for="floatingInput" class="text-muted">Contact Number</label>
                             </div>
                         </div>
-                        <!-- </div> -->
+
                     </div>
                 </div>
 
@@ -136,25 +184,6 @@
                         </div>
                         <!-- </div> -->
                     </div>
-                </div>
-
-                <div class="doc-upload">
-                    <div class="h5 mb-4 mt-4">(Optional) Upload Photo or Document</div>
-
-                    <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile02">
-                        <label class="input-group-text bg-info text-white" for="inputGroupFile02">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-cloud-arrow-up mr-1 mt-1" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M7.646 5.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708z" />
-                                <path
-                                    d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383m.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
-                            </svg>
-                            Upload
-                        </label>
-                    </div>
-
                 </div>
 
                 <div class="mb-1 mt-4 d-flex justify-content-end gap-1">
