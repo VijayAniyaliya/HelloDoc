@@ -30,9 +30,24 @@ body{
     height: 120px;
 }
 
+@media only screen and (max-width:426px){
+    .hellodoc-image{
+        display: none;
+    }
+}
+
 
 .content{
     margin-top: 100px;
+}
+
+@media only screen and (max-width:426px){
+    .hellodoc-img{
+        display: none;
+    }
+    .content{
+        margin-top: 235px;
+    }
 }
 
 .back-btn{
@@ -44,14 +59,20 @@ body{
 }
 
 .inputs{
-    width: 300px;
+    width: 350px;
     margin: auto;
 }
 
+@media only screen and (max-width:900px){
+    .inputs{
+        width: 300px;
+    }
+}
+
 .input-icon{
-    left: 135px;
+    left: 42%;
     position: relative;
-    top: -42px;
+    bottom: 42px;
 }
 
 .label{
@@ -223,4 +244,21 @@ body{
   .footer-content{
     position: absolute;
     bottom: 0px;
+  }
+
+  .form-control {
+    /* border-width: 2px; */
+    /* border-color: gray; */
+  }
+  .form-control:focus {
+    border-color: #01bce9;
+    box-shadow: none;
+  }
+  .form-floating > .form-control:focus ~ label {
+    color: #01bce9;
+    
+  }
+  .form-floating > label {
+    color: gray;
+    
   }

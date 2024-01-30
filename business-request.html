@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="CSS/request.css" />
 </head>
@@ -61,7 +61,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating  mb-3">
-                                    <input type="tel" class="form-control pt-3 pb-3" id="phone">
+                                <input type="tel" class="form-control pt-3 pb-3" id="phone">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -80,8 +80,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingInput"
-                                    placeholder="case number" />
+                                <input type="text" class="form-control" id="floatingInput" placeholder="case number" />
                                 <label for="floatingInput" class="">Case Number (Optional)</label>
                             </div>
                         </div>
@@ -138,7 +137,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating  mb-3">
-                                    <input type="tel" class="form-control pt-3 pb-3" id="phone1">
+                                <input type="tel" class="form-control pt-3 pb-3" id="phone1">
                             </div>
                         </div>
 
@@ -204,19 +203,54 @@
             <span class="my-auto mr-1">|</span>
             <a href="#" class="text-secondary my-auto"><span class="text-white mr-3">Privacy policy</span></a>
         </div>
+
+
+        <div class="modal fade" id="reloadAlert" tabindex="-1" role="dialog" aria-labelledby="reloadAlertLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body align-items-center d-flex justify-content-center mt-4">
+                        <svg class="border-info" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 0 24 24"
+                            width="40px" fill="#faaa04">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                        </svg>
+                    </div>
+                    <h3 class=" d-flex justify-content-center">Information</h3>
+                    <div class="d-flex justify-content-center px-4">
+                        <p class="text-center ">When submitting a request, you must provide the correct contact
+                            information for the patient or the responsibly party. Failure to provice the correct email
+                            and phone number will delay service or be declined</p>
+                    </div>
+                    <div class="mb-4 mt-4 d-flex justify-content-center">
+                        <button type="button" class="btn btn-primary px-4" data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="/JS/custom.js"></script>
     <script>
         const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-        utilsScript:
-            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-    const phone1InputField = document.querySelector("#phone1");
-    const phone1Input = window.intlTelInput(phone1InputField, {
-        utilsScript:
-            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+        const phone1InputField = document.querySelector("#phone1");
+        const phone1Input = window.intlTelInput(phone1InputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#reloadAlert').modal('show');
+        });
     </script>
 </body>
 
